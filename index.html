@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Voyage à Londres</title>
+  </head>
+  <body>
+    <header>
+      <h1>Voyage à London</h1>
+    </header>
+    <nav>
+      <a href="Lundi/Lundi.html">Lundi</a>
+      <a href="Mardi/Mardi.html">Mardi</a>
+      <a href="Mercredi/Mercredi.html">Mercredi</a>
+      <a href="Jeudi/Jeudi.html">Jeudi</a>
+      <a href="Vendredi/Vendredi.html">Vendredi</a>
+    </nav>
+    <main>
+      <p>
+        Découvrez notre voyage à Londres avec nos incroyable accompagnant Mme
+        Robert, Mme Lecour Grandmaison, Mme Rabia, et M Valois.
+      </p>
+      <img
+        src="Photo/Photo_de_groupe_National_Gallery.jpg"
+        alt="Photo de Londres"
+        onclick="showDescription()"
+      />
+      <div id="description">
+        <button id="hide_button" onclick="hideDescription()">X</button>
+        <p>
+          Photo prise après la visite de la National Gallery à Londres mardi 8
+          avril
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.3299557955247!2d-0.13040185186767578!3d51.50703253664661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce176ac979%3A0x42af85654e23a0b4!2sNational%20Gallery!5e1!3m2!1sfr!2sfr!4v1746365827221!5m2!1sfr!2sfr"
+          width="400"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+    <footer>
+      <p>Site créé par Lucina, Marion, et Léo. Tous droits réservés.</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
