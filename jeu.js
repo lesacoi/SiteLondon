@@ -14,7 +14,7 @@ function showRandomPicture() {
     // On vérifie que le status HTTP est bien supérieur à 200 et inférieur à 400
     // Sinon on renvoie le code du statut et le message du statut
     if (req.status >= 200 && req.status < 400) {
-      const data = JSON.parse(this.responseText);
+      const data = JSON.parse(this.responseText); // On convertit la réponse en JSON
       nbrphoto = data.length;
       const photo = Math.floor(Math.random() * nbrphoto);
       const img = document.getElementById("random_picture");
