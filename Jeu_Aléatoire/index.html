@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="Jeu.css" />
     <title>Voyage à Londres</title>
   </head>
   <body>
@@ -13,14 +14,27 @@
     <nav>
       <a href="../Lundi/Lundi.html">Lundi</a>
       <a href="../Mardi/Mardi.html">Mardi</a>
-      <a href="../jour3.html">Mercredi</a>
+      <a href="../Mercredi/Mercredi.html">Mercredi</a>
       <a href="../Jeudi/Jeudi.html">Jeudi</a>
       <a href="../Vendredi/Vendredi.html">Vendredi</a>
     </nav>
-    <main></main>
+    <main>
+      <img
+        id="random_picture"
+        src=""
+        alt="Image aléatoire"
+        style="display: none"
+      />
+      <img
+        id="RandomGame"
+        src="../Photo/Start-button.PNG"
+        alt="Start"
+        onclick="showRandomPicture()"
+      />
+    </main>
     <footer>
       <p>Site créé par Lucina, Marion, et Léo. Tous droits réservés.</p>
     </footer>
-    <script src="index.js"></script>
+    <script src="Jeu.js"></script>
   </body>
 </html>
