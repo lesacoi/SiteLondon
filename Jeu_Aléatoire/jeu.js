@@ -46,11 +46,11 @@ function showRandomPicture() {
     "GET",
     `https://api.github.com/repos/lesacoi/SiteLondon/contents/${jour}/Photo?ref=main`
   );
-  req.setRequestHeader(
-    "Authorization",
-    "token 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"
-  );
-  req.setRequestHeader("Accept", "application/vnd.github.v3+json");
+  // req.setRequestHeader(
+  //   "Authorization",
+  //   token
+  // );
+  // req.setRequestHeader("Accept", "application/vnd.github.v3+json");
 
   var data;
   var photo;
