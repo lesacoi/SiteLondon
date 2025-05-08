@@ -1,20 +1,27 @@
-function print(txt) {
-  console.log(txt);
+function point() {
+  var point = localStorage.getItem("Point"); // On récupère le score
+  const affiche = document.getElementById("points");
+  affiche.innerHTML = `<p>${point} 🪙</p>`;
+  affiche.style.display = "block";
 }
 
 if (localStorage.getItem("Point") === null) {
   localStorage.setItem("Point", 0); // On initialise le score à 0
 } else {
-  var point = localStorage.getItem("Point"); // On récupère le score
+  point();
 }
 
 function showRandomPicture() {
+  var count = 0;
   function makeName(name) {
-    console.log(name);
     if (name.includes(".")) {
       name = name.substring(0, name.indexOf("."));
     }
-    return name.replace(/_/g, " ");
+    return name
+      .replace(/_/g, " ")
+      .replace(/-/g, " ")
+      .replace(/\(\d+\)/g, " ")
+      .trim();
   }
   function buildButtons(tab) {
     const form = document.getElementById("quiz-form");
@@ -114,16 +121,15 @@ function showRandomPicture() {
   function buttonEvent() {
     const boutons = document.querySelectorAll("#quiz-form button");
     boutons.forEach((button) => {
-      console.log("ok2");
       button.addEventListener("click", function (e) {
         e.preventDefault(); // empêche le rechargement du formulaire
         const choix = this.value;
-        verifierJour(choix, boutons);
+        verifierReponse(choix, boutons);
       });
     });
   }
 
-  function verifierJour(choix, boutons) {
+  function verifierReponse(choix, boutons) {
     if (jours.includes(choix)) {
       answer = jour;
       exo = "jour";
@@ -137,6 +143,13 @@ function showRandomPicture() {
       exo = "nom";
       replay = document.getElementById("replay-button");
       replay.style.display = "block"; // On affiche le bouton replay
+      if (count === 1) {
+        localStorage.setItem(
+          "Point",
+          parseInt(localStorage.getItem("Point")) + 1
+        );
+        point();
+      }
     }
     const result = document.getElementById("quiz-result");
     result.style.display = "block"; // On affiche le résultat
@@ -144,6 +157,7 @@ function showRandomPicture() {
     answerButton.style.backgroundColor = "#4caf50";
     if (choix === answer) {
       result.innerHTML = `Bravo ! Tu as trouvé le bon ${exo} !`;
+      count += 1;
     } else {
       result.innerHTML = `Dommage ! Ce n'est pas le bon ${exo} !`;
       const choixButton = Array.from(boutons).find((b) => b.value === choix);
@@ -162,6 +176,18 @@ function showRandomPicture() {
     }
     return tableau;
   }
+  function addonetimes(namesPhoto, name) {
+    // Vérifie si un élément équivalent existe déjà
+    const exists = namesPhoto.some(
+      (element) => makeName(element) === makeName(name)
+    );
+
+    if (!exists) {
+      namesPhoto.push(name);
+    }
+
+    return namesPhoto;
+  }
 
   function buildNext() {
     next = document.getElementById("next-button");
@@ -169,16 +195,18 @@ function showRandomPicture() {
     const result = document.getElementById("quiz-result");
     result.style.display = "none"; // On masque le résultat
     const question = document.getElementById("quiz-question");
-    question.innerHTML = `Regarde bien l'image et choisis le bon nom :`;
+    question.innerHTML = `Regarde bien l'image et choisis le lieu / nom :`;
     i = 0;
     nbrphoto = data.length;
-    while (i > nbrphoto || i > 4) {
+    var y;
+    namesPhoto = [data[photo]["name"]];
+    while (i < nbrphoto && i < 4) {
       i++;
-      namesPhoto.add(data[y]["name"]);
+      y = Math.floor(Math.random() * nbrphoto);
+      namesPhoto = addonetimes(namesPhoto, data[y]["name"]);
     }
-    namesPhoto = new Set([data[photo]["name"]]);
 
-    namesPhoto = melangerTableau([...namesPhoto]);
+    namesPhoto = melangerTableau(namesPhoto);
     buildButtons(namesPhoto); // On construit les boutons avec les noms des photos
   }
 }
@@ -188,6 +216,10 @@ const urlParams = new URLSearchParams(window.location.search);
 
 // Vérifier si le paramètre "true" est présent dans l'URL
 if (urlParams.has("true")) {
+  replay = document.getElementById("replay-button");
+  replay.onclick = function () {
+    window.location.href = window.location.href;
+  }; // Permet de ne pas avoir un additionné les ?true
   showRandomPicture();
   // Appeler une fonction ou exécuter une logique ici
 }
