@@ -11,14 +11,45 @@
       <h1>Camden Town</h1>
     </header>
     <main> 
-      <p class="Introduction">
-        Le Jeudi 3 Avril est considéré par la majorité d'entre nous
-        comme la meilleure journée du séjour.
+
+      <p class="Introduction"> <img src="Photo/uk-flag.gif" class="Drapeau1" id="random-image">
+        MADAME TUSSAUD <img src="Photo/uk-flag.gif" class="Drapeau2" id="image-clicable">
       </p>
+
+      <script>
+        const image = document.getElementById('random-image');
+        function moveImageRandomly() {
+          const maxX = window.innerWidth - image.clientWidth;
+          const maxY = window.innerHeight - image.clientHeight;
+          const randomX = Math.floor(Math.random() * maxX);
+          const randomY = Math.floor(Math.random() * maxY);
+          image.style.left = `${randomX}px`;
+          image.style.top = `${randomY}px`;
+        }
+        moveImageRandomly();
+        image.addEventListener('click', moveImageRandomly);
+      
+      </script>
+
+      <script>
+      const imageClicable = document.getElementById('image-clicable');
+      function deplacerImageAleatoirement() {
+        const largeurFenetre = window.innerWidth - imageClicable.clientWidth;
+        const hauteurFenetre = window.innerHeight - imageClicable.clientHeight;
+        const positionX = Math.floor(Math.random() * largeurFenetre);
+        const positionY = Math.floor(Math.random() * hauteurFenetre);
+        imageClicable.style.left = `${positionX}px`;
+        imageClicable.style.top = `${positionY}px`;
+      } 
+      deplacerImageAleatoirement();
+      imageClicable.addEventListener('click', deplacerImageAleatoirement);
+  </script>
+
       <p class="MadameTussaud">
         Ainsi, la journée débute par une visite du lieu iconique 
         qu'est Madame Tussaud !
       </p>
+
       <img
         src="Photo/Beyoncé.jpg"
         alt="Photo de musée Madame Tussaud"
@@ -26,6 +57,7 @@
         height="450"
         class="PhotoBeyoncé"
       />
+      
       <p>
         Photo prise après que le groupe se soit évanoui car 
         Beyoncé avait trop d'aura

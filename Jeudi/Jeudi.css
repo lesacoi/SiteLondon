@@ -94,13 +94,26 @@ main {
 
 .Introduction {
     font-style: italic;
+    text-align:center;
+    font-size: 400%;
 }
+
+.Drapeau1 {
+  position: absolute;
+}
+
+.Drapeau2 {
+  position: absolute;
+}
+
+
+
 
 .MadameTussaud {
   font-size: 125%;
 }
 
-. PhotoBeyoncé {
+.PhotoBeyoncé {
   border-image: auto;
 }
 
