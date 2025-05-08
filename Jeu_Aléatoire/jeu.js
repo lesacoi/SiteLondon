@@ -2,6 +2,12 @@ function print(txt) {
   console.log(txt);
 }
 
+if (localStorage.getItem("Point") === null) {
+  localStorage.setItem("Point", 0); // On initialise le score à 0
+} else {
+  var point = localStorage.getItem("Point"); // On récupère le score
+}
+
 function showRandomPicture() {
   function makeName(name) {
     console.log(name);

@@ -10,6 +10,12 @@
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+#points {
+  margin-top: -1rem;
+  margin-right: auto;
+  display: flex;
+}
 #RandomGame {
   padding: 0px;
   border-radius: 0px;
