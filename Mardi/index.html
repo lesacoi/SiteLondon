@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="Mardi.css" />
     <title>Voyage à Londres</title>
   </head>
   <body>
-    <header>
+    <header onclick="window.location.replace('../')">
       <h1>Voyage à London</h1>
     </header>
     <nav>
@@ -18,10 +19,257 @@
       <a href="../Vendredi/">Vendredi</a>
       <a href="../Jeu_Aléatoire/">Jeu</a>
     </nav>
-    <main></main>
+    <main>
+      <h2>La Matinnée</h2>
+      <p>
+        Après une premiere nuit dans les familles d'accueil, nous nous sommes
+        rejoint pour la journée. Nous avons pris le car pour nous rendre pour
+        rentrer en ville et commencer les visites.
+      </p>
+      <div class="divphoto1" onclick="showDescription('descriptionDiv1')">
+        <div>
+          <div>
+            <img
+              src="Photo/British_Museum (1).jpg"
+              alt="Photo de la
+            bibliotheque du british museum"
+              onclick="showDescription('descriptionBibliotheque');"
+            />
+            <img
+              src="Photo/British_Museum.jpg"
+              alt="Photo du monument des Néréides"
+              onclick="showDescription('descriptionMonument');"
+            />
+          </div>
+          <img
+            src="Photo/British Museum (1).jpg"
+            alt="Photo du toit du british museum"
+            onclick="showDescription('descriptionCourt')"
+          />
+          <img
+            src="Photo/British Museum.jpg"
+            alt="Photo de momie du british museum"
+            onclick="showDescription('descriptionMomie')"
+          />
+        </div>
+        <img src="Photo/British-Museum.jpg" alt="Photo du british museum" />
+      </div>
+      <p>
+        Après cette visite nous sommes allés manger dans un petit parc très
+        fleurie :
+      </p>
+      <div class="divphoto2" onclick="showDescription('descriptionDiv2')">
+        <img src="Photo/Pause au parc.jpg" alt="Photo des fleures du parc" />
+        <img src="Photo/Pause midi.jpg" alt="Photo des fleures du parc" />
+      </div>
+      <h2>L'après midi</h2>
+      <p>
+        L'après midi, nous avons visité la National Gallery, et nous nous sommes
+        balader dans le quartier après.
+      </p>
+      <div class="divphoto3" onclick="showDescription('descriptionDiv3')">
+        <img
+          src="Photo/National_Gallery.jpg"
+          alt="Photo de la National Gallery"
+          onclick="showDescription('descriptionNationalGallery')"
+        />
+        <img
+          src="Photo/Voiture.jpg"
+          alt="Photo du voiture dans une boutique souvenir."
+          onclick="showDescription('descriptionVoiture')"
+        />
+      </div>
+      <p>
+        Enfin, nous avons retrouvé
+        <span
+          class="tooltip"
+          data-tooltip="Le chauffeur qui nous a accompagné à Londres et nous à conduit tous les jours."
+          >José</span
+        >, qui nous a conduit jusqu'au point de rendez-vous pour retrouver les
+        familles d'accueil. Puis nous avons passé la soirée avec elles.
+      </p>
+
+      <!--------------------- Div de desvription des images------------------------------------- -->
+      <div id="descriptionDiv1" class="description">
+        <button id="hide_button" onclick="hideDescription('descriptionDiv1')">
+          X
+        </button>
+        <h3>British Museum</h3>
+        <p>
+          Nous sommes allés au
+          <a href="https://fr.wikipedia.org/wiki/British_Museum" target="_blank"
+            >British Museum</a
+          >, qui presente l'histoire et de la culture humaine des civilisations.
+          Avec notament des momies et des objets antiques. Nous avons pue entre
+          autre voir la
+          <a onclick="showDescription('descriptionBibliotheque')"
+            ><strong>bibliotheque</strong></a
+          >, le
+          <a onclick="showDescription('descriptionMonument')"
+            ><strong>monument des Néréides</strong></a
+          >
+          , l'impressionnante
+          <a onclick="showDescription('descriptionCourt')"
+            ><strong>Queen Elizabeth II Great Court</strong></a
+          >
+          et la
+          <a onclick="showDescription('descriptionMomie')"
+            ><strong>collection de momies</strong></a
+          >
+          du musée.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1758.5340677907823!2d-0.1295405365413823!3d51.519887621235036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b323093d307%3A0x2fb199016d5642a7!2sBritish%20Museum!5e1!3m2!1sfr!2sfr!4v1746712933229!5m2!1sfr!2sfr"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div id="descriptionBibliotheque" class="description">
+        <button
+          id="hide_button"
+          onclick="hideDescription('descriptionBibliotheque')"
+        >
+          X
+        </button>
+        <h3>Bibliotheque du British Museum</h3>
+        <p>
+          Nous avons pue voir l'impressionnante
+          <a
+            href="https://fr.wikipedia.org/wiki/Salle_de_lecture_du_British_Museum"
+            target="_blank"
+            >Salle de lecture du British Museum</a
+          >(<a
+            href="https://en.wikipedia.org/wiki/British_Museum_Reading_Room"
+            target="_blank"
+            >en</a
+          >), qui compte 25 000 livres axés sur les cultures représentées dans
+          le musée.
+        </p>
+        <img
+          src="Photo/British-Museum (1).jpg"
+          alt="Photo de la bibliotheque du british museum"
+          style="margin: 0 auto; display: block; width: 100%"
+        />
+      </div>
+      <div id="descriptionMonument" class="description">
+        <button
+          id="hide_button"
+          onclick="hideDescription('descriptionMonument')"
+        >
+          X
+        </button>
+        <h3>Monument des Néréides</h3>
+        <p>
+          Le
+          <a
+            href="https://en.wikipedia.org/wiki/Nereid_Monument"
+            target="_blank"
+            >monument des Néréides</a
+          >est un monument funéraire de la ville antique de
+          <a href="https://fr.wikipedia.org/wiki/Xanthe_(Lycie)" target="_blank"
+            >Xanthe</a
+          >, en Lycie.
+        </p>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Illustrerad_Verldshistoria_band_I_Ill_102.jpg/1018px-Illustrerad_Verldshistoria_band_I_Ill_102.jpg"
+          alt="Photo du monument des Néréides"
+          style="margin: 0 auto; display: block; width: 80%"
+        />
+      </div>
+      <div id="descriptionCourt" class="description">
+        <button id="hide_button" onclick="hideDescription('descriptionCourt')">
+          X
+        </button>
+        <h3>Queen Elizabeth II Great Court</h3>
+        <p>
+          La
+          <a
+            href="https://en.wikipedia.org/wiki/Queen_Elizabeth_II_Great_Court"
+            target="_blank"
+            >Queen Elisabeth II Great Court</a
+          >
+          au British Museum est une grande cour interieure au centre du musée.
+          En son centre elle abrite la
+          <a onclick="showDescription('descriptionBibliotheque')"
+            ><strong>bibliotheque</strong></a
+          >. Elle est entourée de plusieurs salles d'exposition et possède un
+          immense toit en verre.
+        </p>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/British_Museum_Great_Court_roof.jpg/800px-British_Museum_Great_Court_roof.jpg"
+          alt="Photo de la Queen Elizabeth II Great Court"
+          style="margin: 0 auto; display: block; width: 60%"
+        />
+      </div>
+      <div id="descriptionMomie" class="description">
+        <button id="hide_button" onclick="hideDescription('descriptionMomie')">
+          X
+        </button>
+        <h3>La collection de Momies</h3>
+        <p>
+          Nous avons pue observé à l'étage l'imppressionnante
+          <a
+            href="https://en.wikipedia.org/wiki/British_Museum_Department_of_Ancient_Egypt_and_Sudan"
+            target="_blank"
+            >collection de momies</a
+          >
+          du British Museum provenant d'Egypte et du Soudan. Avec elle vient
+          plus de 100 000 pièces antiques, ce qui en fait la colection la plus
+          complette du monde.
+        </p>
+      </div>
+      <div id="descriptionDiv2" class="description">
+        <button id="hide_button" onclick="hideDescription('descriptionDiv2')">
+          X
+        </button>
+        <h3>The Victoria Embankment Gardens</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1498.1652464436218!2d-0.12300239346769756!3d51.507958484742915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c928d53f0b%3A0x112d78885b8433f8!2sVictoria%20Embankment%20Gardens!5e1!3m2!1sfr!2sfr!4v1746718898653!5m2!1sfr!2sfr"
+          width="400"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div id="descriptionNationalGallery" class="description">
+        <button
+          id="hide_button"
+          onclick="hideDescription('descriptionNationalGallery')"
+        >
+          X
+        </button>
+        <h3>The National Gallery</h3>
+        <p>
+          La
+          <a
+            href="https://en.wikipedia.org/wiki/National_Gallery"
+            target="_blank"
+            >National Gallery</a
+          >
+          est un musée d'art à Londres, situé sur la place de Trafalgar. Il
+          abrite une collection de plus de 2 300 peintures, allant du XIIIe au
+          debut du XXe siècle.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781.5906904760334!2d-0.1308739247262796!3d51.50893231059314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce176ac979%3A0x42af85654e23a0b4!2sNational%20Gallery!5e1!3m2!1sfr!2sfr!4v1746720373921!5m2!1sfr!2sfr"
+          width="400"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
     <footer>
       <p>Site créé par Lucina, Marion, et Léo. Tous droits réservés.</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
   </body>
 </html>

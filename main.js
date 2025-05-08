@@ -1,8 +1,8 @@
-function showDescription() {
-  const descriptionDiv = document.getElementById("description");
+function showDescription(id) {
+  const descriptionDiv = document.getElementById(id);
   descriptionDiv.style.display = "block";
 }
-function hideDescription() {
-  const descriptionDiv = document.getElementById("description");
+function hideDescription(id) {
+  const descriptionDiv = document.getElementById(id);
   descriptionDiv.style.display = "none";
 }
