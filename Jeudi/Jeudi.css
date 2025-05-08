@@ -115,7 +115,27 @@ main {
 }
 
 .PhotoBeyoncé {
-  border-image: auto;
+  border-radius: 0.5rem;
+}
+
+.PhotoDrake {
+  border-radius: 0.5rem;
+}
+
+.PhotoStarWars {
+  border-radius: 0.5rem;
+}
+
+.PhotoCamcam {
+  border-radius: 0.5rem;
+}
+
+.PhotoCartes {
+  border-radius: 0.5rem;
+}
+
+.PhotoBoots {
+  border-radius: 0.5rem;
 }
 
 .Bebe { 
@@ -131,6 +151,12 @@ main {
 .Dake { 
   font-style: italic;
   font-size: 35%;
+}
+
+.Texte1 {
+  border-width: 2px;
+  border-style: groove;
+  border-color: #ff89ef;
 }
 
 .Park { 
