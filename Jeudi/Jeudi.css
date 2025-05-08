@@ -2,14 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffb1ee;
+    background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));
     text-align: center;
   }
   header {
-    background-color: #333;
+    background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));;
     color: white;
     padding: 0.1rem 0;
     text-align: center;
+    letter-spacing: 20px;
+    word-spacing: 28px;
   }
   nav {
     text-align: center;
@@ -85,10 +87,23 @@ main {
   border-left: 50px;
   border-right: 50px;
   border-left-style: double;
-  border-left-color: rgb(238, 123, 186);
+  border-left-color: rgb(247, 200, 236);
   border-right-style: double;
-  border-right-color: rgb(238, 123, 186);
+  border-right-color: rgb(247, 200, 236);
 }
+
+.Introduction {
+    font-style: italic;
+}
+
+.MadameTussaud {
+  font-size: 125%;
+}
+
+. PhotoBeyoncé {
+  border-image: auto;
+}
+
 
   /*Mais, vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, 
 je dirais que c’est d’abord des rencontres, des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi.
