@@ -9,6 +9,7 @@ header {
   color: white;
   padding: 0.1rem 0;
   text-align: center;
+  cursor: pointer;
 }
 nav {
   text-align: center;
@@ -33,7 +34,7 @@ img {
   margin-top: 2rem;
   cursor: pointer;
 }
-#description {
+.description {
   display: none;
   position: fixed;
   top: 50%;

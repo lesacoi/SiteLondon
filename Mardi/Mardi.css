@@ -1,1 +1,95 @@
+.divphoto1 {
+  cursor: pointer;
+  align-items: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.divphoto1 img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.divphoto1 div {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
 
+.divphoto1 div img {
+  width: 33%;
+}
+.divphoto1 div div {
+  width: 33%;
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divphoto1 div div img {
+  width: 100%;
+  margin: 0px;
+}
+
+.divphoto2 {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.divphoto2 img {
+  width: 50%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.divphoto3 {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.divphoto3 img {
+  width: 50%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  white-space: nowrap;
+  bottom: 125%; /* position au-dessus */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
