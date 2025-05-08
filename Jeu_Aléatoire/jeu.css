@@ -1,5 +1,81 @@
+#quiz-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f0f8ff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#points {
+  margin-top: -1rem;
+  margin-right: auto;
+  display: flex;
+}
 #RandomGame {
   padding: 0px;
   border-radius: 0px;
   height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#random_picture {
+  margin-left: auto;
+  margin-right: auto;
+}
+#quiz-options {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.quiz-option {
+  background-color: #3e8ed0;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 0.3rem;
+}
+
+.quiz-option:hover {
+  background-color: #2f73b4;
+}
+
+#quiz-result {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: none;
+}
+
+#next-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+}
+#replay-button {
+  padding: 0px;
+  border-radius: 0px;
+  height: 2rem;
+  margin-top: 1rem;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
 }

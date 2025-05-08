@@ -12,25 +12,43 @@
       <h1>Voyage à London</h1>
     </header>
     <nav>
-      <a href="../Lundi/Lundi.html">Lundi</a>
-      <a href="../Mardi/Mardi.html">Mardi</a>
-      <a href="../Mercredi/Mercredi.html">Mercredi</a>
-      <a href="../Jeudi/Jeudi.html">Jeudi</a>
-      <a href="../Vendredi/Vendredi.html">Vendredi</a>
+      <a href="../Lundi/">Lundi</a>
+      <a href="../Mardi/">Mardi</a>
+      <a href="../Mercredi/">Mercredi</a>
+      <a href="../Jeudi/">Jeudi</a>
+      <a href="../Vendredi/">Vendredi</a>
+      <a href="../Jeu_Aléatoire/">Jeu</a>
     </nav>
     <main>
-      <img
-        id="random_picture"
-        src=""
-        alt="Image aléatoire"
-        style="display: none"
-      />
-      <img
-        id="RandomGame"
-        src="../Photo/Start-button.PNG"
-        alt="Start"
-        onclick="showRandomPicture()"
-      />
+      <section id="quiz-container">
+        <div id="points"><p>Points</p></div>
+        <h2>Et cette photo ?</h2>
+        <img
+          id="random_picture"
+          src=""
+          alt=" ⚠️ Erreur. Consultez la console, ou réesayez"
+          style="display: none"
+        />
+        <img
+          id="RandomGame"
+          src="../Photo/Start-button.PNG"
+          alt="Start"
+          onclick="showRandomPicture()"
+        />
+        <p id="quiz-question" style="display: none"></p>
+        <div id="quiz-options">
+          <form id="quiz-form"></form>
+        </div>
+        <p id="quiz-result"></p>
+        <button id="next-button" style="display: none">→</button>
+        <img
+          id="replay-button"
+          src="../Photo/Play-button.PNG"
+          alt="Replay"
+          style="display: none"
+          onclick="window.location.href = window.location.href + '?true'"
+        />
+      </section>
     </main>
     <footer>
       <p>Site créé par Lucina, Marion, et Léo. Tous droits réservés.</p>
