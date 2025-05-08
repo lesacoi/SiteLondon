@@ -20,8 +20,9 @@
     </nav>
     <main>
       <p>
-        Découvrez notre voyage à Londres avec nos incroyable accompagnants Mme
-        Robert, Mme Lecour Grandmaison, Mme Rabia, et M Valois.
+        Découvrez notre voyage à Londres avec nos
+        <a onclick="showDescription('easterEgg')">incroyable</a> accompagnants
+        Mme Robert, Mme Lecour Grandmaison, Mme Rabia, et M Valois.
       </p>
       <img
         src="Photo/Photo_de_groupe_National_Gallery.jpg"
@@ -45,6 +46,17 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+      </div>
+      <div id="easterEgg" class="description">
+        <button id="hide_button" onclick="hideDescription('easterEgg')">
+          X
+        </button>
+        <h3>Easter Egg : Hymne du voyage</h3>
+        <!-- L'audio -->
+        <audio id="audioPlayer" src="CIEL - GIMS.mp3"></audio>
+
+        <!-- Le bouton Play/Pause -->
+        <button id="playPauseBtn">▶️</button>
       </div>
     </main>
     <footer>

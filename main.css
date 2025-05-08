@@ -64,6 +64,14 @@ img {
   background-color: #ff1c1c;
 }
 
+#playPauseBtn {
+  font-size: 24px;
+  /* padding: 10px 20px; */
+  cursor: pointer;
+  background-color: #d4d0d0;
+  border: none;
+}
+
 footer {
   background-color: #f4f4f4;
   text-align: center;
