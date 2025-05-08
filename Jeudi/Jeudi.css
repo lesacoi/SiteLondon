@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +8,7 @@ body {
     text-align: center;
   }
   header {
-    background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));;
+    background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));
     color: white;
     padding: 0.1rem 0;
     text-align: center;
@@ -16,15 +18,16 @@ body {
   nav {
     text-align: center;
     margin: 1rem 0;
+    
   }
   nav a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     margin: 0 1rem;
     font-weight: bold;
   }
   nav a:hover {
-    color: #0078d7;
+    background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));
   }
   main {
     text-align: center;
@@ -67,12 +70,19 @@ body {
   }
   
   footer {
-    background-color: #f4f4f4;
+    background-color: #f38fee;
     text-align: center;
     padding: 10px 0;
-    border-top: 2px solid #ccc;
+    border-top: 2px solid #db4da0;
     margin-top: 20px;
   }
+  main a {
+    text-decoration: none;
+    color: #7ae732;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+
   footer p {
     font-size: 14px;
     color: #555;
@@ -93,9 +103,10 @@ main {
 }
 
 .Introduction {
-    font-style: italic;
     text-align:center;
     font-size: 400%;
+    text-shadow: 2px 2px red;
+    color:rgb(121, 32, 91);
 }
 
 .Drapeau1 {
@@ -106,17 +117,69 @@ main {
   position: absolute;
 }
 
-
-
-
 .MadameTussaud {
   font-size: 125%;
 }
 
 .PhotoBeyoncé {
-  border-image: auto;
+  border-radius: 0.5rem;
 }
 
+.PhotoDrake {
+  border-radius: 0.5rem;
+}
+
+.PhotoStarWars {
+  border-radius: 0.5rem;
+}
+
+.PhotoCamcam {
+  border-radius: 0.5rem;
+}
+
+.PhotoCartes {
+  border-radius: 0.5rem;
+}
+
+.PhotoBoots {
+  border-radius: 0.5rem;
+}
+
+.Bebe { 
+  font-style: italic;
+  font-size: 75%;
+}
+
+.Star { 
+  font-style: italic;
+  font-size: 75%;
+}
+
+.Dake { 
+  font-style: italic;
+  font-size: 35%;
+}
+
+.Texte1 {
+  border-width: 2px;
+  border-style: dashed;
+  border-color: #ff89ef;
+}
+
+.Park { 
+  font-style: italic;
+  font-size: 75%;
+}
+
+.Boots { 
+  font-style: italic;
+  font-size: 75%;
+}
+
+.Camcam { 
+  font-style: italic;
+  font-size: 75%;
+}
 
   /*Mais, vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, 
 je dirais que c’est d’abord des rencontres, des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi.
