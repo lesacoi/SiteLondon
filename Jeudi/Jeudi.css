@@ -70,12 +70,19 @@ body {
   }
   
   footer {
-    background-color: #f4f4f4;
+    background-color: #f38fee;
     text-align: center;
     padding: 10px 0;
-    border-top: 2px solid #ccc;
+    border-top: 2px solid #db4da0;
     margin-top: 20px;
   }
+  main a {
+    text-decoration: none;
+    color: #7ae732;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+
   footer p {
     font-size: 14px;
     color: #555;
@@ -155,7 +162,7 @@ main {
 
 .Texte1 {
   border-width: 2px;
-  border-style: groove;
+  border-style: dashed;
   border-color: #ff89ef;
 }
 
