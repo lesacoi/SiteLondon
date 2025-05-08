@@ -82,6 +82,12 @@ main {
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  border-left: 50px;
+  border-right: 50px;
+  border-left-style: double;
+  border-left-color: rgb(238, 123, 186);
+  border-right-style: double;
+  border-right-color: rgb(238, 123, 186);
 }
 
   /*Mais, vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, 
