@@ -10,44 +10,24 @@
     <header>
       <h1>Camden Town</h1>
     </header>
-    <main> 
-      <img src="../Photo/uk-flag.gif" class="Drapeau1" id="random-image"/>
-      <p class="Introduction"> 
-        10/04/2025 
-      </p>
-      <img src="../Photo/uk-flag.gif" class="Drapeau2" id="image-clicable"/>
-      <script>
-        const image = document.getElementById('random-image');
-        function moveImageRandomly() {
-          const maxX = window.innerWidth - image.clientWidth;
-          const maxY = window.innerHeight - image.clientHeight;
-          const randomX = Math.floor(Math.random() * maxX);
-          const randomY = Math.floor(Math.random() * maxY);
-          image.style.left = `${randomX}px`;
-          image.style.top = `${randomY}px`;
-        }
-        moveImageRandomly();
-        image.addEventListener('click', moveImageRandomly);
-      
-      </script>
-
-      <script>
-      const imageClicable = document.getElementById('image-clicable');
-      function deplacerImageAleatoirement() {
-        const largeurFenetre = window.innerWidth - imageClicable.clientWidth;
-        const hauteurFenetre = window.innerHeight - imageClicable.clientHeight;
-        const positionX = Math.floor(Math.random() * largeurFenetre);
-        const positionY = Math.floor(Math.random() * hauteurFenetre);
-        imageClicable.style.left = `${positionX}px`;
-        imageClicable.style.top = `${positionY}px`;
-      } 
-      deplacerImageAleatoirement();
-      imageClicable.addEventListener('click', deplacerImageAleatoirement);
-  </script>
+    <main>
+      <img
+        src="../Photo/uk-flag.gif"
+        class="Drapeau1"
+        id="random-image"
+        onclick="deplacerImageAleatoirement('random-image')"
+      />
+      <p class="Introduction">10/04/2025</p>
+      <img
+        src="../Photo/uk-flag.gif"
+        class="Drapeau2"
+        id="image-clicable"
+        onclick="deplacerImageAleatoirement('image-clicable')"
+      />
 
       <p class="MadameTussaud">
-        Ainsi, la journée débute par une visite du lieu iconique 
-        qu'est Madame Tussaud !
+        Ainsi, la journée débute par une visite du lieu iconique qu'est Madame
+        Tussaud !
       </p>
 
       <img
@@ -57,10 +37,10 @@
         height="450"
         class="PhotoBeyoncé"
       />
-      
+
       <p class="Bebe">
-        Photo prise après que le groupe se soit évanoui car 
-        Beyoncé avait trop d'aura
+        Photo prise après que le groupe se soit évanoui car Beyoncé avait trop
+        d'aura
       </p>
       <img
         src="Photo/StarWars.jpg"
@@ -70,8 +50,8 @@
         class="PhotoStarWars"
       />
       <p class="Star">
-        Vous savez, moi je ne pense pas qu'il y ait de bonnes
-        ou de mauvaises situations...
+        Vous savez, moi je ne pense pas qu'il y ait de bonnes ou de mauvaises
+        situations...
       </p>
       <img
         src="Photo/Drake.jpg"
@@ -88,11 +68,12 @@
         height="40"
       />
       <p class="Texte1">
-        Le musée était franchement excellent avec un parc d'attractions
-        en son centre et une partie horrifique. <br> Bien meilleur que le 
-        frauduleux musée grévin et ses tickets a 50euros!<br>
-        Cependant, bien d'autres surprises nous attendaient dans le 
-        quartier punk/rock de Londres, Camden Town... 
+        Le musée était franchement excellent avec un parc d'attractions en son
+        centre et une partie horrifique. <br />
+        Bien meilleur que le frauduleux musée grévin et ses tickets a
+        50euros!<br />
+        Cependant, bien d'autres surprises nous attendaient dans le quartier
+        punk/rock de Londres, Camden Town...
       </p>
       <img
         src="Photo/Cartes.jpg"
@@ -101,35 +82,32 @@
         height="400"
         class="PhotoCartes"
       />
-        <p class="Park">
-          On a croisé les 5èmes qui étaient aussi en
-          voyage a Londres dans ce même parc!
-        </p>
-        <img
+      <p class="Park">
+        On a croisé les 5èmes qui étaient aussi en voyage a Londres dans ce même
+        parc!
+      </p>
+      <img
         src="Photo/NewRock.jpg"
         alt="Chaussure géante à Camden..."
         width="400"
         height="600"
         class="PhotoBoots"
-        />
-        <p class="Boots">
-          La devanture des boutiques la-bas...
-        </p>
-        <img
+      />
+      <p class="Boots">La devanture des boutiques la-bas...</p>
+      <img
         src="Photo/Incognito.jpg"
         alt="Chaussure géante à Camden..."
         width="500"
         height="550"
         class="PhotoCamcam"
-        />
-        <p class="Camcam">
-          Guess who's this ?
-        </p>
-        <a href="../Mercredi">Précédent</a> <a href="../Vendredi">Suivant</a>
+      />
+      <p class="Camcam">Guess who's this ?</p>
+      <a href="../Mercredi">Précédent</a> <a href="../">Maison</a>
+      <a href="../Vendredi">Suivant</a>
     </main>
     <footer>
       <p>Site créé par Lucina, Marion, et Léo. Tous droits réservés.</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="Jeudi.js"></script>
   </body>
 </html>
