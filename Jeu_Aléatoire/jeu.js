@@ -40,15 +40,15 @@ function showRandomPicture() {
   }
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // On selectionne l'image aléatoirement
+  // On sélectionne l'image aléatoirement
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   const img = document.getElementById("random_picture");
   const button = document.getElementById("RandomGame");
   button.style.display = "none"; // On cache le bouton
   img.style.display = "block"; // On affiche l'image
-  img.style.height = "4rem"; // On met la hauteur de l'image à 1rem
-  img.style.width = "4rem"; // On met la largeur de l'image à 1rem
+  img.style.height = "4rem"; // On met la hauteur de l'image à 4rem
+  img.style.width = "4rem"; // On met la largeur de l'image à 4rem
   img.src = "../Photo/Chargement.gif"; // On vide la source de l'image
   const day = Math.floor(Math.random() * 5);
   jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
@@ -94,7 +94,7 @@ function showRandomPicture() {
     }
   });
   req.addEventListener("error", function () {
-    console.error("La requête à recontrer un problème");
+    console.error("La requête a rencontré un problème");
     button.style.display = "block"; // On affiche le bouton
     img.style.height = "auto"; // On met la hauteur de l'image à auto
     img.style.width = "auto"; // On met la largeur de l'image à auto
