@@ -25,7 +25,7 @@ footer {
   text-align: center;
   padding: 10px 0;
   border-top: 2px solid #2fa839;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 main a {
   text-decoration: none;
@@ -39,7 +39,9 @@ footer p {
   color: #555;
   margin: 0;
 }
-
+p {
+  color: black;
+}
 main {
   padding: 2rem;
   background-image: url(https://44.media.tumblr.com/f813653935728b0751055e9ca4b0b581/tumblr_pixgz9uuhE1uzwgsuo1_400.gif);
