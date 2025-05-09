@@ -125,23 +125,23 @@ main {
   border-radius: 0.5rem;
 }
 
-.PhotoDrake {
+.PhotoMiam {
   border-radius: 0.5rem;
 }
 
-.PhotoStarWars {
+.PhotoStairs {
   border-radius: 0.5rem;
 }
 
-.PhotoCamcam {
+.PhotoBus {
   border-radius: 0.5rem;
 }
 
-.PhotoCartes {
+.PhotoCiel2 {
   border-radius: 0.5rem;
 }
 
-.PhotoBoots {
+.PhotoFin {
   border-radius: 0.5rem;
 }
 
@@ -162,8 +162,8 @@ main {
 
 .Texte1 {
   border-width: 2px;
-  border-style: dashed;
-  border-color: #ff89ef;
+  border-style:solid;
+  border-color: #578bda;
   font-style: italic;
 }
 
