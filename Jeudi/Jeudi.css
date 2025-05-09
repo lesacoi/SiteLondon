@@ -1,95 +1,27 @@
-
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));
-    text-align: center;
-  }
-  header {
-    background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));
-    color: white;
-    padding: 0.1rem 0;
-    text-align: center;
-    letter-spacing: 20px;
-    word-spacing: 28px;
-  }
-  nav {
-    text-align: center;
-    margin: 1rem 0;
-    
-  }
-  nav a {
-    text-decoration: none;
-    color: #ffffff;
-    margin: 0 1rem;
-    font-weight: bold;
-  }
-  nav a:hover {
-    background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));
-  }
-  main {
-    text-align: center;
-    padding: 2rem;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 2rem;
-    cursor: pointer;
-  }
-  #description {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #d4d0d0;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  #hide_button {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background-color: #ff5c5c;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 0.3rem 0.6rem;
-    cursor: pointer;
-    font-size: 0.8rem;
-    z-index: 1001;
-  }
-  
-  #hide_button:hover {
-    background-color: #ff1c1c;
-  }
-  
-  footer {
-    background-color: #f38fee;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 2px solid #db4da0;
-    margin-top: 20px;
-  }
-  main a {
-    text-decoration: none;
-    color: #7ae732;
-    margin: 0 1rem;
-    font-weight: bold;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));
+  text-align: center;
+}
+header {
+  background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));
+  color: white;
+  padding: 0.1rem 0;
+  text-align: center;
+  letter-spacing: 20px;
+  word-spacing: 28px;
+}
 
-  footer p {
-    font-size: 14px;
-    color: #555;
-    margin: 0;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
 
 main {
+  padding: 2rem;
   background-image: url(https://i.imgur.com/tRcbTMF.gif);
   background-position: center;
   background-size: cover;
@@ -102,19 +34,23 @@ main {
   border-right-color: rgb(247, 200, 236);
 }
 
+main a {
+  text-decoration: none;
+  color: #7ae732;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
 .Introduction {
-    text-align:center;
-    font-size: 400%;
-    text-shadow: 2px 2px red;
-    color:rgb(121, 32, 91);
+  text-align: center;
+  font-size: 400%;
+  text-shadow: 2px 2px red;
+  color: rgb(121, 32, 91);
 }
 
-.Drapeau1 {
+.Drapeau {
   position: absolute;
-}
-
-.Drapeau2 {
-  position: absolute;
+  cursor: pointer;
 }
 
 .MadameTussaud {
@@ -145,17 +81,17 @@ main {
   border-radius: 0.5rem;
 }
 
-.Bebe { 
+.Bebe {
   font-style: italic;
   font-size: 75%;
 }
 
-.Star { 
+.Star {
   font-style: italic;
   font-size: 75%;
 }
 
-.Dake { 
+.Dake {
   font-style: italic;
   font-size: 35%;
 }
@@ -166,26 +102,40 @@ main {
   border-color: #ff89ef;
 }
 
-.Park { 
+.Park {
   font-style: italic;
   font-size: 75%;
 }
 
-.Boots { 
+.Boots {
   font-style: italic;
   font-size: 75%;
 }
 
-.Camcam { 
+.Camcam {
   font-style: italic;
   font-size: 75%;
 }
 
-  /*Mais, vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, 
+footer {
+  background-color: #f38fee;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 2px solid #db4da0;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/*Mais, vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, 
 je dirais que c’est d’abord des rencontres, des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi.
 Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée… Parce que quand on a le goût de la chose, quand on a le 
 goût dela chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face, je dirais, le miroir qui vous aide à avancer. 
 Alors ce n’est pas mon cas, comme je le disais là, puisque moi au contraire, j’ai pu ; et je dis merci à la vie, je lui dis merci, je chante la vie, 
 je danse la vie… Je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent : « Mais comment fais-tu pour avoir cette humanité ? » 
 Eh bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour, ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction 
-mécanique, mais demain, qui sait, peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi…*/ 
+mécanique, mais demain, qui sait, peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi…*/

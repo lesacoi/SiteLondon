@@ -1,112 +1,64 @@
-
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color:rgb(132, 229, 169)
-    text-align: center;
-  }
-  header {
-    background-image: linear-gradient(rgb(140, 164, 214), rgb(126, 231, 250));
-    color: rgb(132, 229, 169)
-    padding: 0.1rem 0;
-    text-align: center;
-    letter-spacing: 20px;
-    word-spacing: 28px;
-  }
-  nav {
-    text-align: center;
-    margin: 1rem 0;
-    
-  }
-  nav a {
-    text-decoration: none;
-    color: rgb(243, 108, 164)
-    margin: 0 1rem;
-    font-weight: bold;
-  }
-  nav a:hover {
-    background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));
-  }
-  main {
-    text-align: center;
-    padding: 2rem;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 2rem;
-    cursor: pointer;
-  }
-  #description {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(132, 229, 169)
-    padding: 1rem;
-    border: 1px solid #ccc;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  #hide_button {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background-color: #ff5c5c;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 0.3rem 0.6rem;
-    cursor: pointer;
-    font-size: 0.8rem;
-    z-index: 1001;
-  }
-  
-  #hide_button:hover {
-    background-color: #ff1c1c;
-  }
-  
-  footer {
-    background-color: #89fda2;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 2px solid #2fa839;
-    margin-top: 20px;
-  }
-  main a {
-    text-decoration: none;
-    color: #7ae732;
-    margin: 0 1rem;
-    font-weight: bold;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(132, 229, 169);
+  text-align: center;
+}
+header {
+  background-image: linear-gradient(rgb(140, 164, 214), rgb(126, 231, 250));
+  color: rgb(132, 229, 169);
+  padding: 0.1rem 0;
+  text-align: center;
+  letter-spacing: 20px;
+  word-spacing: 28px;
+}
 
-  footer p {
-    font-size: 14px;
-    color: #555;
-    margin: 0;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: #89fda2;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 2px solid #2fa839;
+  margin-top: 20px;
+}
+main a {
+  text-decoration: none;
+  color: #7ae732;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
 
 main {
+  padding: 2rem;
   background-image: url(https://44.media.tumblr.com/f813653935728b0751055e9ca4b0b581/tumblr_pixgz9uuhE1uzwgsuo1_400.gif);
   background-position: center;
   background-size: cover;
   overflow: hidden;
   border-left: 50px;
   border-right: 50px;
-  border-left-style:groove;
+  border-left-style: groove;
   border-left-color: rgb(132, 229, 169);
   border-right-style: double;
   border-right-color: rgb(136, 204, 162);
 }
 
 .Introduction {
-    text-align:center;
-    font-size: 400%;
-    text-shadow: 2px 2px red;
-    color:rgb(121, 32, 91);
+  text-align: center;
+  font-size: 400%;
+  text-shadow: 2px 2px red;
+  color: rgb(121, 32, 91);
 }
 
 .Drapeau1 {
@@ -145,39 +97,39 @@ main {
   border-radius: 0.5rem;
 }
 
-.Bebe { 
+.Bebe {
   font-style: italic;
   font-size: 75%;
 }
 
-.Star { 
+.Star {
   font-style: italic;
   font-size: 75%;
 }
 
-.Dake { 
+.Dake {
   font-style: italic;
   font-size: 35%;
 }
 
 .Texte1 {
   border-width: 2px;
-  border-style:solid;
+  border-style: solid;
   border-color: #578bda;
   font-style: italic;
 }
 
-.Park { 
+.Park {
   font-style: italic;
   font-size: 75%;
 }
 
-.Boots { 
+.Boots {
   font-style: italic;
   font-size: 75%;
 }
 
-.Camcam { 
+.Camcam {
   font-style: italic;
   font-size: 75%;
 }
