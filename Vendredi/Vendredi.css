@@ -4,12 +4,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgb(216, 133, 188), rgb(247, 200, 236));
+    color:rgb(132, 229, 169)
     text-align: center;
   }
   header {
     background-image: linear-gradient(rgb(140, 164, 214), rgb(126, 231, 250));
-    color: white;
+    color: rgb(132, 229, 169)
     padding: 0.1rem 0;
     text-align: center;
     letter-spacing: 20px;
@@ -22,7 +22,7 @@ body {
   }
   nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(243, 108, 164)
     margin: 0 1rem;
     font-weight: bold;
   }
@@ -45,7 +45,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #d4d0d0;
+    background-color: rgb(132, 229, 169)
     padding: 1rem;
     border: 1px solid #ccc;
     z-index: 1000;
@@ -70,10 +70,10 @@ body {
   }
   
   footer {
-    background-color: #f38fee;
+    background-color: #89fda2;
     text-align: center;
     padding: 10px 0;
-    border-top: 2px solid #db4da0;
+    border-top: 2px solid #2fa839;
     margin-top: 20px;
   }
   main a {
