@@ -143,13 +143,6 @@ function showRandomPicture() {
       exo = "nom";
       replay = document.getElementById("replay-button");
       replay.style.display = "block"; // On affiche le bouton replay
-      if (count === 1) {
-        localStorage.setItem(
-          "Point",
-          parseInt(localStorage.getItem("Point")) + 1
-        );
-        point();
-      }
     }
     const result = document.getElementById("quiz-result");
     result.style.display = "block"; // On affiche le résultat
@@ -158,6 +151,13 @@ function showRandomPicture() {
     if (choix === answer) {
       result.innerHTML = `Bravo ! Tu as trouvé le bon ${exo} !`;
       count += 1;
+      if (count === 2) {
+        localStorage.setItem(
+          "Point",
+          parseInt(localStorage.getItem("Point")) + 1
+        );
+        point();
+      }
     } else {
       result.innerHTML = `Dommage ! Ce n'est pas le bon ${exo} !`;
       const choixButton = Array.from(boutons).find((b) => b.value === choix);
